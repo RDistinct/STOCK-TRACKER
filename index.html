@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Stock Tracker</h1>
+
+    <!-- <h3>Keep track of quantity & price of your stock</h3> -->
+
+    <section>
+        <form id="product-form">
+            <fieldset>
+                <legend>Product</legend>
+                <p>
+                    <label for="item">Item:</label>
+                    <input type="text" name="" id="item">
+                </p>
+
+                <p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" name="" id="quantity">
+                </p>
+
+                <p>
+                    <label for="price">Price:</label>
+                    <input type="number" name="" id="price">
+                </p>
+
+                <section>
+                    <p>
+                        <button >Add Product</button>
+                    </p>
+                </section>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="product-display"> <!-- assume this is the tbody -->
+        <!-- Display the stock we have currently plus the date added-->
+        <h3  >Stock List</h3>
+        <!-- <div class="product-display-container">
+            <p id="itemName">ABC</p>
+            <p id="itemQuantity">5</p>
+            <p id="itemPrice">100</p>
+            <p id="itemDate">Date:</p>
+            <p><button id="delete" class="delete">Delete</button></p>
+        </div> -->
+       
+    </section>
+</body>
+</html>
+
+<script src="./main.js"></script>
+
+<style>
+    
+    .product-display p{
+        margin:4px;
+        padding:0;
+    }
+    .product-display-container{
+        /* margin-top:4px ; */
+        /* border: red 2px solid; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:12px;
+    }
+    #itemDate{
+        text-decoration: wavy;
+    }
+    p #item{
+        margin-left: 26px;
+    }
+    #price{
+        margin-left: 22px;
+
+    }
+    .product-display-container .delete {
+        padding:0;
+        margin:0;
+       
+    }
+</style>
